@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic Masterpieces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                   <!-- link here -->
+                <img src="./images/logo.png" alt="Logo" style="height: 50px;" class="logo"> 
+             
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./product.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <!-- link here -->
+                            Our Products 
+                            <img src="./images/down.png" alt="Dropdown Icon" class="dropdown-icon">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <div class="dropdown-columns row">
+                                <div class="col-md-4">
+                                       <!-- link here -->
+                                    <h6 class="dropdown-header"><a href="./prodects/WallTiles.html" style="text-decoration: none;">Wall Tiles</a></h6>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Bathroom_wt.html">Bathroom Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Kitchen_wt.html">Kitchen Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Outdoor_wt.html">Outdoor Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Living_wt.html">Living Room Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Bedroom_wt.html">Bedroom Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Commercial_wt.html">Wall Tiles for Commercial Spaces</a>
+                                </div>
+                                <div class="col-md-4">
+                                       <!-- link here -->
+                                    <h6 class="dropdown-header"><a href="./prodects/FloorTiles.html"style="text-decoration: none;">Floor Tiles</a></h6>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Living_ft.html">Living Room Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Outdoor_ft.html">Outdoor Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects\Bedroom_ft.html">Bedroom Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Kitchen_ft.html">Kitchen Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Commercial_ft.html">Floor Tiles for Commercial Spaces</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="dropdown-header">Tile Finder</h6>
+                                    <div class="p-3">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="tileSize" class="form-label">Select Size</label>
+                                                <select id="tileSize" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>Size 1</option>
+                                                    <option>Size 2</option>
+                                                    <option>Size 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="tileFinish" class="form-label">Select Finish</label>
+                                                <select id="tileFinish" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>Finish 1</option>
+                                                    <option>Finish 2</option>
+                                                    <option>Finish 3</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="Export.html">Export</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+           
+    
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center text-lg-start">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Surfaces that <br> make your <span>home</span><br> decor more beautiful.</h1>
+                    <p class="product-info">GVT<br>600 x 1200 MM</p>
+                    <a href="#" class="btn btn-primary btn-lg" id="Exbtn">Explore More</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <div id="aboutUsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- link here -->
+                                <img src="./images/Double-charge-3.jpg" alt="Ceramic Masterpiece 1" class="d-block w-100 img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- link here -->
+                                <img src="./images/GVT-PGVT.jpg" alt="Ceramic Masterpiece 2" class="d-block w-100 img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <!-- link here -->
+                                <img src="./images/GVT-10X13.jpg" alt="Ceramic Masterpiece 3" class="d-block w-100 img-fluid">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutUsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutUsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Content Section -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="content-container">
+                        <h1 style="color: red;">Ceramic Masterpieces</h1>
+                        <p>We are India's leading largest manufacturer of High-Quality Vitrified tiles with a vast distribution channel network in India and abroad. Within just a short period, Proton has earned its reputation among customers by aiming to satisfy the needs of individuals, providing Quality Assurance & Well-Organized Marketing & Distribution channels in the India & Overseas Market. Despite huge competition and the fastest-growing global market.</p>
+                        <p>As with the huge competition and fastest-growing of the global market. PROTON is also driving to expand its business all over the world. We do not stick or focus on a particular area to set up our market, in fact, our main focus is to reach each & every country in the world. We believe in a long-term business relationship with customers and for that trust, faith and true commitment are necessary. Our key objective is to fulfill all these things.</p>
+                        <ul>
+                            <li>Vast distribution channel network</li>
+                            <li>Quality Assurance</li>
+                            <li>Well-Organized Marketing</li>
+                        </ul>
+                        <!-- link here -->
+                        <a href="information.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sub-about section -->
+    <section id="stats">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                          <!-- link here -->
+                        <img src="./images/customer.png" alt="Icon 1">
+                        <h3><span class="count" data-count="1200">0</span>+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                          <!-- link here -->
+                        <img src="./images/brokerage.png" alt="Icon 2">
+                        <h3><span class="count" data-count="680">0</span>+</h3>
+                        <p>Dealers</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                          <!-- link here -->
+                        <img src="./images/logistics.png" alt="Icon 3">
+                        <h3><span class="count" data-count="19">0</span>+</h3>
+                        <p>Export Countries</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                          <!-- link here -->
+                        <img src="./images/completed-task.png" alt="Icon 4">
+                        <h3><span class="count" data-count="160">0</span>+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- our product section -->
+ <section id="our-products">
+    <div class="container">
+        <h1 class="section-title text-center" data-aos="fade-up">Our Products</h1>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-card">
+                    <!-- link here -->
+                    <img src="./images/walltiles2.jpg" alt="Double Charged Vitrified Tiles" class="img-fluid">
+                    <div class="product-info text-center">
+                        <h3>120x180 cm<br>The Ultima</h3>
+                          <!-- link here -->
+                        <a href="./prodects/WallTiles.html" class="btn btn-outline-dark">Wall Tiles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-card">
+                      <!-- link here -->
+                    <img src="./images/floortiles.jpg" alt="GVT/PGVT Tiles" class="img-fluid">
+                    <div class="product-info text-center">
+                        <h3>120x180 cm<br>Vitronite</h3>
+                          <!-- link here -->
+                        <a href="./prodects/FloorTiles.html" class="btn btn-outline-dark">Floor TILES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- application area section -->
+<div class="container my-5">
+    <h1 class="section-title text-center" data-aos="zoom-in">Application Areas</h1>
+    <div class="row text-center">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="area-box">
+                <i class="fas fa-home"></i>
+                <h4>Residential</h4>
+                <p>Perfect for your home interiors and exteriors.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="area-box">
+                <i class="fas fa-building"></i>
+                <h4>Commercial</h4>
+                <p>Ideal for offices, shops, and commercial spaces.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="area-box">
+                <i class="fas fa-spa"></i>
+                <h4>Wellness</h4>
+                <p>Designed for spas, saunas, and wellness centers.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="area-box">
+                <i class="fas fa-hospital-alt"></i>
+                <h4>Healthcare</h4>
+                <p>Suited for hospitals, clinics, and healthcare facilities.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="500">
+            <div class="area-box">
+                <i class="fas fa-school"></i>
+                <h4>Education</h4>
+                <p>Perfect for schools, colleges, and universities.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600">
+            <div class="area-box">
+                <i class="fas fa-shopping-cart"></i>
+                <h4>Retail</h4>
+                <p>Ideal for shops, malls, and retail outlets.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="700">
+            <div class="area-box">
+                <i class="fas fa-industry"></i>
+                <h4>Industrial</h4>
+                <p>Designed for factories, warehouses, and industrial spaces.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="800">
+            <div class="area-box">
+                <i class="fas fa-hotel"></i>
+                <h4>Hospitality</h4>
+                <p>Perfect for hotels, resorts, and restaurants.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="900">
+            <div class="area-box">
+                <i class="fas fa-tree"></i>
+                <h4>Outdoor</h4>
+                <p>Ideal for gardens, parks, and outdoor spaces.</p>
+            </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="area-box">
+                <i class="fas fa-parking"></i>
+                <h4>Parking</h4>
+                <p>Suited for parking lots, garages, and driveways.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- cosumer review section -->
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" data-aos="zoom-in"  data-aos-delay="100">
+        <h1 class="section-title text-center" data-aos="zoom-in" >What they're saying</h1>
+        <div class="carousel-item active" data-aos-delay="100">
+            <div class="testimonial">
+                <p> ceramic tiles are fantastic! I installed them in my living room, and they have completely changed the look of the space. The tiles have a beautiful finish and are very resilient. I've received so many compliments from guests. Great value for money!</p>
+                <div class="testimonial-author">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Himansu Meswa" class="rounded-circle">
+                    <h5>Himansu Meswa</h5>
+                    <small>Our customer</small>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>I recently renovated my kitchen and chose Masterpiece ceramic tiles for the backsplash. The quality is outstanding, and the tiles are incredibly durable. The colors are vibrant and add a beautiful touch to my kitchen. I couldn't be happier with my choice!</p>
+                <div class="testimonial-author">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Ajay Choudhary" class="rounded-circle">
+                    <h5>Ajay Choudhary</h5>
+                    <small>Our customer</small>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>Masterpiece tiles transformed my bathroom into a modern and elegant space. The quality is top-notch, and the colors are vibrant and consistent. I highly recommend these tiles to anyone looking to upgrade their home!</p>
+                <div class="testimonial-author">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Priya Singh" class="rounded-circle">
+                    <h5>Priya Singh</h5>
+                    <small>Our customer</small>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>We chose Masterpiece tiles for our office renovation, and we couldn't be happier with the results. The tiles are durable, stylish, and easy to maintain. Our clients often compliment the new look of our office!</p>
+                <div class="testimonial-author">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="John Doe" class="rounded-circle">
+                    <h5>John Doe</h5>
+                    <small>Our customer</small>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="testimonial">
+                <p>The ceramic tiles we used in our outdoor patio are simply stunning. They have withstood harsh weather conditions and still look as good as new. An excellent investment for our home!</p>
+                <div class="testimonial-author">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Sara Ali" class="rounded-circle">
+                    <h5>Sara Ali</h5>
+                    <small>Our customer</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"data-aos="zoom-in"  data-aos-delay="100">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" data-aos="zoom-in"  data-aos-delay="100">Next</span>
+    </button>
+</div>
+
+<!-- Gallary section -->
+<div class="gallery-section">
+    <h2 class="gallery-heading" data-aos="zoom-in">Our Gallery</h2>
+
+    <div id="uniqueGallery" class="carousel slide gallery-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Indicators -->
+        <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#uniqueGallery" data-bs-slide-to="0" class="active" aria-current="true" data-aos="zoom-in"  data-aos-delay="100"></button>
+            <button type="button" data-bs-target="#uniqueGallery" data-bs-slide-to="1" data-aos="zoom-in"  data-aos-delay="100"></button>
+            <button type="button" data-bs-target="#uniqueGallery" data-bs-slide-to="2" data-aos="zoom-in"  data-aos-delay="100"></button>
+            <button type="button" data-bs-target="#uniqueGallery" data-bs-slide-to="3" data-aos="zoom-in"  data-aos-delay="100"></button>
+         </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner custom-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-01-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 1">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images\Gallary-02-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 2">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images\Gallary-03-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 3">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-4-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-05-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 5">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-06-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 6">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-07-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 7">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-08-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 8">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-09-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 5">
+                    </div>
+
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-10-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 6">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-11-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 7">
+                    </div>
+                    <div class="col-3" data-aos="zoom-in"  data-aos-delay="100">
+                          <!-- link here -->
+                        <img src="./images/Gallary-01-min.jpg" class="d-block w-100 custom-image" alt="Gallery Image 8">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="why-choose-us-section">
+    <h2 class="gallery-heading" data-aos="zoom-in">Why choose Us ?</h2>
+    <div class="row">
+        <!-- Quality Products -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="100">
+                  <!-- link here -->
+                <img src="./images/shield.gif" alt="Quality Products" class="choose-us-icon">
+                <h3>Premium Quality</h3>
+                <p>We offer ceramic masterpieces crafted from the finest materials, ensuring durability and aesthetic appeal that lasts a lifetime.</p>
+            </div>
+        </div>
+
+        <!-- Expertise and Experience -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="200">
+                  <!-- link here -->
+                <img src="./images/certificate.gif" alt="Expertise and Experience" class="choose-us-icon">
+                <h3>Expertise & Experience</h3>
+                <p>With years of experience in the ceramic industry, our team brings unmatched craftsmanship and attention to detail in every piece.</p>
+            </div>
+        </div>
+
+        <!-- Customization -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="300">
+                  <!-- link here -->
+                <img src="./images/menu.gif" alt="Customization Options" class="choose-us-icon">
+                <h3>Customization</h3>
+                <p>We provide personalized solutions, allowing you to create bespoke ceramic pieces that perfectly match your vision and style.</p>
+            </div>
+        </div>
+
+        <!-- Sustainable Practices -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="400">
+                  <!-- link here -->
+                <img src="./images/badge.gif" alt="Sustainable Practices" class="choose-us-icon">
+                <h3>Sustainable Practices</h3>
+                <p>Our commitment to sustainability ensures that our products are eco-friendly, reducing environmental impact without compromising on quality.</p>
+            </div>
+        </div>
+
+        <!-- Customer Satisfaction -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="500">
+                  <!-- link here -->
+                <img src="./images/handshake.gif" alt="Customer Satisfaction" class="choose-us-icon">
+                <h3>Customer Satisfaction</h3>
+                <p>We prioritize customer satisfaction by offering exceptional service, ensuring a smooth and enjoyable experience from start to finish.</p>
+            </div>
+        </div>
+
+        <!-- Wide Range of Products -->
+        <div class="col-md-4">
+            <div class="choose-us-card" data-aos="zoom-in"  data-aos-delay="600">
+                  <!-- link here -->
+                <img src="./images/infographic.gif" alt="Wide Range of Products" class="choose-us-icon">
+                <h3>Wide Range of Products</h3>
+                <p>Explore a diverse selection of ceramic masterpieces, from classic designs to contemporary styles, all under one roof.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- contact-section -->
+<section id="contact-section">
+    <div class="container">
+        <div class="contact-title">
+            <h2 class="gallery-heading" data-aos="zoom-in">Get in touch with our expert agents</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in"  data-aos-delay="100">
+                <!-- Map Embed -->
+                <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58846.91661115485!2d70.81559556012029!3d22.804972757452262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598cd96ce15487%3A0x294863999340c94e!2sMorbi%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sus!4v1725016171909!5m2!1sen!2sus"></iframe>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in"  data-aos-delay="100">
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Write a message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send a Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4" data-aos="zoom-in"  data-aos-delay="100">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h6>Have any question?</h6>
+                    <p>Free +91 9723023403</p>
+                </div>
+                <div class="contact-info">
+                    <h6>Write email</h6>
+                    <p>info@MasterpiecesCeramic.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- footer section -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <div class="footer-about">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Logo" class="footer-logo">
+                    <h3>CERAMIC MASTERPIECES PVT. LTD.</h3>
+                    <p>We are India's leading largest manufacturer of High-Quality Vitrified tiles with a vast distribution channel network in India and abroad.</p>
+                    <!-- link here -->
+                    <a href="#" class="btn btn-contact">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Pages Links -->
+            <div class="col-md-2">
+                <h4>Our Pages</h4>
+                <ul class="footer-links">
+                      <!-- link here -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="#">Packing Details</a></li>
+                    <li><a href="#">Technical Specification</a></li>
+                </ul>
+            </div>
+
+            <!-- Products Links -->
+            <div class="col-md-2">
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                      <!-- link here -->
+                    <li><a href="./wall.html">Wall Tiles</a></li>
+                    <li><a href="./floor.html">Floor Tiles</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h4>Visit Us</h4>
+                <address>
+                    CERAMIC MASRTERPIECES PVT. LTD.<br>
+                    8-A, National Highway, pipdi Road,<br>
+                    At : Ratavirada, Tal : Wankaner, Morbi - 363641<br></br>
+                    <a href="mailto:info@CeramicMasterpices.com">info@CeramicMasterpices.com</a> 
+                    <br>
+                    <a href="tel:+919099053418">+91 9723023403</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>© ALL COPYRIGHT 2024 -CERAMIC MASRTERPIECES PVT. LTD.</p>
+            <ul class="social-links" >
+                <li><a href="#"><i class="fab fa-facebook-f" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+   
+      
+
+    <script src="./Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200, // Animation duration in milliseconds
+          offset: 100, // Offset (in pixels) from the original trigger point
+          once: true, // Whether animation should happen only once - while scrolling down
+        });
+      </script>
+      
+    
+</body>
+</html>

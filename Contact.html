@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ceramic Masterpieces</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                   <!-- link here -->
+                <img src="./images/logo.png" alt="Logo" style="height: 50px;" class="logo"> 
+             
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./product.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <!-- link here -->
+                            Our Products 
+                            <img src="./images/down.png" alt="Dropdown Icon" class="dropdown-icon">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <div class="dropdown-columns row">
+                                <div class="col-md-4">
+                                       <!-- link here -->
+                                    <h6 class="dropdown-header"><a href="./prodects/WallTiles.html" style="text-decoration: none;">Wall Tiles</a></h6>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Bathroom_wt.html">Bathroom Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Kitchen_wt.html">Kitchen Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Outdoor_wt.html">Outdoor Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Living_wt.html">Living Room Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Bedroom_wt.html">Bedroom Wall Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Commercial_wt.html">Wall Tiles for Commercial Spaces</a>
+                                </div>
+                                <div class="col-md-4">
+                                       <!-- link here -->
+                                    <h6 class="dropdown-header"><a href="./prodects/FloorTiles.html"style="text-decoration: none;">Floor Tiles</a></h6>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Living_ft.html">Living Room Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Outdoor_ft.html">Outdoor Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Bedroom_ft.html">Bedroom Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Kitchen_ft.html">Kitchen Floor Tiles</a>
+                                       <!-- link here -->
+                                    <a class="dropdown-item" href="./prodects/Commercial_ft.html">Floor Tiles for Commercial Spaces</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="dropdown-header">Tile Finder</h6>
+                                    <div class="p-3">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="tileSize" class="form-label">Select Size</label>
+                                                <select id="tileSize" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>Size 1</option>
+                                                    <option>Size 2</option>
+                                                    <option>Size 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="tileFinish" class="form-label">Select Finish</label>
+                                                <select id="tileFinish" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>Finish 1</option>
+                                                    <option>Finish 2</option>
+                                                    <option>Finish 3</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./Export.html">Export</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+                       <!-- link here -->
+                    <li class="nav-item"><a class="nav-link" href="./information.html">Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    
+    <!-- Sub Header Section -->
+<section class="sub-header">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                   <!-- link here -->
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+        <h1 class="animated fadeInDown">Contact Now</h1>
+    </div>
+</section>
+
+
+    <!-- contact-section -->
+<section id="contact-section">
+    <div class="container">
+        <div class="contact-title">
+            <h2 class="gallery-heading" data-aos="zoom-in">Get in touch with our expert agents</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in"  data-aos-delay="100">
+                <!-- Map Embed -->
+                <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58846.91661115485!2d70.81559556012029!3d22.804972757452262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598cd96ce15487%3A0x294863999340c94e!2sMorbi%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sus!4v1725016171909!5m2!1sen!2sus"></iframe>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in"  data-aos-delay="100">
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Write a message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send a Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4" data-aos="zoom-in"  data-aos-delay="100">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h6>Have any question?</h6>
+                    <p>Free +91 9723023403</p>
+                </div>
+                <div class="contact-info">
+                    <h6>Write email</h6>
+                    <p>info@MasterpiecesCeramic.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+     <!-- footer section -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <div class="footer-about">
+                      <!-- link here -->
+                    <img src="./images/logo.png" alt="Logo" class="footer-logo">
+                    <h3>CERAMIC MASTERPIECES PVT. LTD.</h3>
+                    <p>We are India's leading largest manufacturer of High-Quality Vitrified tiles with a vast distribution channel network in India and abroad.</p>
+                    <a href="#" class="btn btn-contact">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Pages Links -->
+            <div class="col-md-2">
+                <h4>Our Pages</h4>
+                <ul class="footer-links">
+                      <!-- link here -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="#">Packing Details</a></li>
+                    <li><a href="#">Technical Specification</a></li>
+                </ul>
+            </div>
+
+            <!-- Products Links -->
+            <div class="col-md-2">
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                      <!-- link here -->
+                    <li><a href="./wall.html">Wall Tiles</a></li>
+                    <li><a href="./floor.html">Floor Tiles</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h4>Visit Us</h4>
+                <address>
+                    CERAMIC MASRTERPIECES PVT. LTD.<br>
+                    8-A, National Highway, pipdi Road,<br>
+                    At : Ratavirada, Tal : Wankaner, Morbi - 363641<br></br>
+                    <a href="mailto:info@CeramicMasterpices.com">info@CeramicMasterpices.com</a> 
+                    <br>
+                    <a href="tel:+919099053418">+91 9723023403</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>© ALL COPYRIGHT 2024 -CERAMIC MASRTERPIECES PVT. LTD.</p>
+            <ul class="social-links" >
+                <li><a href="#"><i class="fab fa-facebook-f" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" id="linksbtn" data-aos="zoom-in" ></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200, // Animation duration in milliseconds
+          offset: 100, // Offset (in pixels) from the original trigger point
+          once: true, // Whether animation should happen only once - while scrolling down
+        });
+      </script>
+      
+
+</body>
+</html>
