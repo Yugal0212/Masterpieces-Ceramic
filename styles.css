@@ -278,6 +278,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
+    height: 600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -340,10 +341,12 @@ body {
 /* aplication area */
 .area-box {
     background-color: #f1f1f1;
-    padding: 30px;
+    padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    height: 300px;
   }
   
   .area-box i {
